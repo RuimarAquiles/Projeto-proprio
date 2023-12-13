@@ -1,0 +1,159 @@
+/* body, table, h1 = referencia elementos*/
+/* " . " = referencia classes*/
+/* " # " = referencia id*/
+
+/*####################################################################*/
+body{/*Global*/
+    text-align: center;
+    background: linear-gradient(black,rgb(0, 0, 218),black );
+    color: rgb(124, 226, 252);
+    font-family: verdana;
+    opacity: 90%;
+}
+::-webkit-scrollbar
+
+.quadroFormContato,tr{/*Background geral das tabelas*/
+   /*background: linear-gradient(black,rgb(0, 0, 218),black );*/
+}
+table{/*padrão de largura das tabelas*/
+    width: 90%;
+}
+/*####################################################################*/
+/*TABELA 1 - Foto + Nome*/
+.toppag{/*unifica tabela no topo da pagina*/
+    border-spacing: 0px;
+}
+.nome{
+    font-size: xx-large;
+    text-align:left;
+}
+.subnome{
+    font-size: large;
+    text-align:center;
+    position: absolute;
+    top: 18%;
+}
+.foto{/*Foto inicio*/
+    text-align: right;
+    height: 200px;
+}
+/*####################################################################*/
+/*TABELA 2 - LINKS MENU*/
+.BarraTabela{
+    height: 40px;
+}
+.marquee-container{
+	width:100%;
+	overflow: hidden;  /* visible, hidden, scroll, auto*/
+}
+.marquee-texto{
+	display:inline-block;
+	white-space:nowrap;
+	animation: marquee 25s linear infinite;
+	background-color:rgb(229, 232, 245);
+	color:black;	
+	padding:10px 150px 10px 150px;
+    border-radius: 20px 20px 20px 20px;
+}
+@keyframes marquee{
+	from{
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+	
+/*####################################################################*/
+/*TABELA 3 - */
+.BarraLinksLateral{/*padding-bottom: 400px;*/
+    position: absolute;
+    padding-top: 40px;
+    padding-left: 5.6%;
+    padding-right: 5.6%;
+    border: 0;
+}
+.redeSociais{/*Nome "Redes Sociais" na aba contatos*/
+    padding-top: 120px;
+    font-family: Tahoma;
+    font-size: xxx-large;
+    font-style: oblique;
+    color:rgb(124, 226, 252);
+}
+.chamativo{/*Cor do texto chamativo para contato*/
+    font-size: x-large;
+    padding-top: 50px;
+    color:rgb(124, 226, 252);
+}
+.chamativo1{/*Cor do texto chamativo para contato*/
+    font-size: x-large;
+    color:rgb(41, 245, 41);
+}
+.iconredeSociais {/*icons das redes sociais na aba contatos*/
+    padding-left: 10cap;
+    padding-top: 40px;
+    padding-bottom: 90px ;
+}
+.vazio{/*icones da pag contato*/
+     background:scroll;
+}
+.textborder{/*Formatação de texto home*/
+    text-align: justify;
+}
+
+.enviar:hover{
+    background-color: darkblue;
+    color: rgb(253, 253, 253);
+}
+/*####################################################################*/
+/*PAG CONTATO*/
+.mensagem{/*Campo de mensagem pag contato*/
+    border-radius: 20px;
+    width: 455px;
+    height: 150px;
+    border-color: darkblue;
+}
+.enviar,.textborder,.projetos{/*Padrão corpo do texto*/
+    padding-left: 35px;
+    padding-right: 35px;
+    font-family: Verdana;
+}
+.enviar,.inputContato{/*botão enviar e input na pagina contato*/
+    border-radius: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-color: darkblue;
+}
+/*####################################################################*/
+.projetos{/*Texto na pag projetos*/
+    padding-left: 80px;
+    justify-content: center;
+    text-align: justify;
+    text-decoration: none;
+}
+a:visited,a{/*ação para links visitados*/
+    color: rgb(150, 224, 243);
+}
+a:hover{/*efeito hover - passar o mouse por cima*/
+    color: rgb(20, 190, 233);
+}
+.links{/*Formatação de links em geral*/
+    text-decoration: none 
+}
+.iconprojeto{
+    width: 80px;
+    font-family: Verdana;
+}
+.iconprojeto:hover, 
+.links:hover, 
+.icons:hover,
+img:hover,
+video:hover{
+    transition-delay: 1ms;
+    transition-duration: 1s;
+    transform: scale(1.2);
+}
+.tabserv{
+    border: 1px;
+    border-color: aqua;
+}
